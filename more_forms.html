@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Form</title>
+  </head>
+  <body>
+    <h1>This is Your Order Form</h1>
+    <h2>Please fill the form below to order :)</h2>
+    <br />
+    <form process="order.php">
+      <label for="name"><b>Name:</b></label>
+      <input type="text" id="name" name="name" />
+      <br />
+      <label for="phone"><b>Phone number:</b> </label>
+      <input type="tel" id="phone" name="phone" />
+      <br />
+      <label for="address"> <b>Address:</b></label>
+      <input type="text" id="address" name="address " />
+      <br />
+      <p>Choose your preference:</p>
+      <input type="radio" id="dine_in" name="preference" value="dine_in" />
+      <label for="dine_in"><b>Dine-In</b></label>
+
+      <input type="radio" id="takeaway" name="preference" value="takeaway" />
+      <label for="takeaway"><b>Takeaway</b></label>
+      <br />
+      <label for="menu"><h2>Continental Menu:</h2></label>
+      <select id="foods" name="foods">
+        <option value="burger">Burger</option>
+        <option value="pizza">Pizza</option>
+        <option value="pasta">Pasta</option>
+        <option value="salad">Salad</option>
+        <option value="sushi">Sushi</option>
+      </select>
+      <br />
+      <br />
+      <input type="submit" value="Submit Order" />
+    </form>
+  </body>
+</html>
